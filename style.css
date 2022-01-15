@@ -1,0 +1,176 @@
+*
+{
+    box-sizing: border-box;
+}
+
+h2
+{
+    margin-left: 40%;
+}
+
+.flex-block
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexItem_1
+{
+    flex: 1;
+}
+
+.firstBlock
+{
+    margin-bottom: 1%;
+}
+
+.flex-block>.flexItem_1:nth-child(2)
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexItemLvl_2
+{
+    flex: 1;
+    margin-bottom: 2%;
+}
+
+    
+.flexItem_1>.flexItemLvl_2:first-child
+{
+   background-color: rgb(231, 231, 231);
+    padding-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    opacity: 0.7;
+}
+
+.flexItem_1>.flexItemLvl_2:last-child
+{
+    background-color: rgb(173, 173, 173);
+    
+    padding-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    opacity: 0.7;
+}
+
+.flexItem_1>.flexItemLvl_2:last-child>ol>li>ul
+{
+    list-style: square;
+}
+
+.flex-block>.flexItem_1:nth-child(3)
+{
+    background: rgb(231, 201, 166);
+}
+
+.flex-block_lvl3
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.flex-block_lvl3>div:first-child
+{
+    margin-left:5%;
+    margin-right:-3%;
+    margin-top:-5px;
+    line-height: 35px;
+}
+
+.flex-block_lvl3>div:last-child>p:last-child
+{
+    border-radius: 35px;
+    background-color: brown;
+    color: white;
+    padding: 20px 100px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.style1
+{
+    border: crimson solid 2px;
+    background: white;
+    border-radius: 15px;
+    padding: 2px 15px;
+    width: 400px;
+    color: gray;
+}
+
+.flex-block_lvl3>div:first-child>p:nth-child(4)
+{
+    margin: 83px 100px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.flex-block_lvl3>div:first-child>p:nth-child(5)
+{
+    margin: -74px 100px;
+    padding-left: 25px;
+}
+
+.flex-block_lvl3>div:first-child>p:nth-child(6)
+{
+    margin: 78px 100px;
+    padding-left: 65px;
+}
+
+.flex-block_lvl3>div:first-child>p:nth-child(2)
+{
+    padding-left: 85px;
+}
+
+.flex-block_lvl3>div:last-child>p:nth-child(2),.flex-block_lvl3>div:last-child>p:nth-child(8)
+{
+    color: black;
+}
+
+.flex-block_lvl3>div:last-child>p:nth-child(3),.flex-block_lvl3>div:last-child>p:nth-child(4),.flex-block_lvl3>div:last-child>p:nth-child(5)
+{
+    color: rgb(66, 64, 63);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-block_lvl3>div:last-child>p:nth-child(2)::after
+{
+    content: url("images/calendar-month\(1\).png");
+    padding-left: 240px;
+}
+.flex-block_lvl3>div:last-child>p:nth-child(6)
+{
+   height: 30px;
+}
+
+.flex-block_lvl3>div:last-child>p:nth-child(3)::after
+{
+    content: url("images/radiobox-marked.png");
+    padding-left: 286px;
+}
+.flex-block_lvl3>div:last-child>p:nth-child(4)::after
+{
+    content: url("images/radiobox-blank.png");
+    padding-left: 258px;
+}
+.flex-block_lvl3>div:last-child>p:nth-child(5)::after
+{
+    content: url("images/radiobox-blank.png");
+    padding-left: 287px;
+}
+.flex-block_lvl3>div:last-child>p:nth-child(8)::after
+{
+    content: url("images/chevron-down.png");
+    padding-left: 250px
+}
+
+.decorationItem
+{
+    color: rgb(66, 64, 63);
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
